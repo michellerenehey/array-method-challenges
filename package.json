@@ -1,0 +1,25 @@
+{
+  "name": "array-method-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --verbose --colors",
+    "test:watch": "npm run test -- --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielsimek/array-method-challenges.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielsimek/array-method-challenges/issues"
+  },
+  "homepage": "https://github.com/gabrielsimek/array-method-challenges#readme",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^27.3.1"
+  }
+}
