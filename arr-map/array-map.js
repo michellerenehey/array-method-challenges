@@ -1,5 +1,8 @@
-export function powerOfTwo(array) {
+export function toThePowerOf(array, exponent) {
+    
+}
   
-  }
-  
+export function capitalizeNames(array){
+
+}
   
