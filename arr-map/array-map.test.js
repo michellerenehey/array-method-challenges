@@ -1,5 +1,5 @@
 import { toThePowerOf, capitalizeNames } from './array-map.js';
-describe.skip('raises each number to exponent power', () => {
+describe('raises each number to exponent power', () => {
     it('^2', () => {
         const input = [1, 2, 12];
         const expected = [1, 4, 144];
@@ -22,7 +22,7 @@ describe.skip('raises each number to exponent power', () => {
     });
 });
 
-describe.skip('Capitalizes names', () => {
+describe('Capitalizes names', () => {
     it('capitalizes all names', () => {
         const input = [
             { name: 'francis', age: 36, twitter: '@ri' },
