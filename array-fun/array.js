@@ -9,7 +9,7 @@
  * @returns {number} the card
  */
 export function cardPosition(cards, position) {
-   
+    return cards[position]; 
 }
   
   /**
@@ -22,8 +22,8 @@ export function cardPosition(cards, position) {
    * @returns {number[]} the cards with the change applied
    */
 export function addCard(cards, position, replacementCard) {
-   
-  
+    cards[position] = replacementCard;
+    return cards;
 }
   
   /**
@@ -35,7 +35,8 @@ export function addCard(cards, position, replacementCard) {
    * @returns {number[]} the cards with the newCard applied
    */
 export function addItemToEndOfArray(cards, newCard) {
-
+    cards.push(newCard); 
+    return cards; 
 }
   
   /**
