@@ -63,7 +63,7 @@ describe('Card Game', () => {
     });
   
     describe('make cards appear', () => {
-        test.only('adding a second card at the top', () => {
+        test('adding a second card at the top', () => {
             const stack = [1];
             const newCard = 5;
   
@@ -148,7 +148,7 @@ describe('Card Game', () => {
         });
     });
   
-    describe.skip('make cards disappear', () => {
+    describe('make cards disappear', () => {
         test('remove the card at the bottom', () => {
             const stack = [1, 2, 3, 4];
             const position = 0;
@@ -238,7 +238,7 @@ describe('Card Game', () => {
         });
     });
   
-    describe.skip('check your work', () => {
+    describe('check your work', () => {
         describe('an empty stack of cards', () => {
             test('has 0 cards', () => {
                 const stack = [];
@@ -268,7 +268,7 @@ describe('Card Game', () => {
             });
         });
   
-        describe.skip('a stack with the odd cards', () => {
+        describe('a stack with the odd cards', () => {
             test('has exactly 5 cards', () => {
                 const stack = [1, 3, 5, 7, 9];
   
