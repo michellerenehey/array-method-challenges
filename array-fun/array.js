@@ -9,7 +9,7 @@
  * @returns {number} the card
  */
 export function cardPosition(cards, position) {
-   
+    return cards[position]; 
 }
   
   /**
@@ -22,8 +22,8 @@ export function cardPosition(cards, position) {
    * @returns {number[]} the cards with the change applied
    */
 export function addCard(cards, position, replacementCard) {
-   
-  
+    cards[position] = replacementCard;
+    return cards;
 }
   
   /**
@@ -35,7 +35,8 @@ export function addCard(cards, position, replacementCard) {
    * @returns {number[]} the cards with the newCard applied
    */
 export function addItemToEndOfArray(cards, newCard) {
-
+    cards.push(newCard); 
+    return cards; 
 }
   
   /**
@@ -47,8 +48,8 @@ export function addItemToEndOfArray(cards, newCard) {
    * @returns {number[]} the cards without the removed card
    */
 export function deleteItem(cards, position) {
-
-  
+    cards.splice(position, 1); 
+    return cards;  
 }
   
   /**
@@ -59,7 +60,8 @@ export function deleteItem(cards, position) {
    * @returns {number[]} the cards without the removed card
    */
 export function deleteLastItem(cards) {
-  
+    cards.pop(); 
+    return cards;
 }
   
   /**
@@ -71,7 +73,8 @@ export function deleteLastItem(cards) {
    * @returns {number[]} the cards including the new card
    */
 export function addItemToTop(cards, newCard) {
- 
+    cards.unshift(newCard); 
+    return cards;
 }
   
   /**
@@ -95,6 +98,10 @@ export function deleteFirstItem(cards) {
    * @returns {boolean} true if there are exactly stackSize number of cards, false otherwise
    */
 export function checkArrayLength(cards, stackSize) {
-
+    if (cards.length === stackSize){
+        return true;
+    } else {
+        return false;
+    }
 }
   

@@ -9,7 +9,7 @@ import {
     checkArrayLength,
 } from './array.js';
   
-describe.skip('Card Game', () => {
+describe('Card Game', () => {
     describe('pick a card', () => {
         test('get the first card', () => {
             const stack = [1, 2, 3];
@@ -33,7 +33,7 @@ describe.skip('Card Game', () => {
         });
     });
   
-    describe.skip('sleight of hand', () => {
+    describe('sleight of hand', () => {
         test('replace the first card with a 7', () => {
             const stack = [1, 2, 3];
             const position = 0;
@@ -62,7 +62,7 @@ describe.skip('Card Game', () => {
         });
     });
   
-    describe.skip('make cards appear', () => {
+    describe('make cards appear', () => {
         test('adding a second card at the top', () => {
             const stack = [1];
             const newCard = 5;
@@ -148,7 +148,7 @@ describe.skip('Card Game', () => {
         });
     });
   
-    describe.skip('make cards disappear', () => {
+    describe('make cards disappear', () => {
         test('remove the card at the bottom', () => {
             const stack = [1, 2, 3, 4];
             const position = 0;
@@ -238,7 +238,7 @@ describe.skip('Card Game', () => {
         });
     });
   
-    describe.skip('check your work', () => {
+    describe('check your work', () => {
         describe('an empty stack of cards', () => {
             test('has 0 cards', () => {
                 const stack = [];
@@ -268,7 +268,7 @@ describe.skip('Card Game', () => {
             });
         });
   
-        describe.skip('a stack with the odd cards', () => {
+        describe('a stack with the odd cards', () => {
             test('has exactly 5 cards', () => {
                 const stack = [1, 3, 5, 7, 9];
   
